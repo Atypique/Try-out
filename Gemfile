@@ -43,6 +43,8 @@ end
 group :development, :test do
 	gem 'sqlite3'
 end
+
+gem "paperclip-dropbox", ">= 1.1.7"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
