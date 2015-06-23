@@ -45,6 +45,8 @@ group :development, :test do
 end
 
 gem "paperclip-dropbox", ">= 1.1.7"
+
+gem "figaro"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
