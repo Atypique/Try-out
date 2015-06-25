@@ -46,7 +46,10 @@ end
 
 gem "paperclip-dropbox", ">= 1.1.7"
 
-gem "figaro"
+gem "figaro" # remove sensitive code on Github
+
+gem 'devise' # Users
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
