@@ -13,3 +13,13 @@ rails generate devise "name"
 # roll back
 
 rails destroy devise "name"
+
+# to change a migration ex
+
+rails generate migration AddNameToUsers name:string 
+
+# to modify db from the console
+
+app $ rails console
+Name.delete_all
+
