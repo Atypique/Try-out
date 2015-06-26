@@ -12,9 +12,15 @@
 
 <div class="container"> <!-- this is the grid formating -->
 
-	<!--This is to enable flashes like "you have logged in successfully" -->
-	<p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+	<!--This is to enable flashes like "you have logged in successfully", it has been formatted to change the overall look -->
+	<% flash.each do |name,msg| %>
+    <% if msg.is_a?(String) %>
+      <div class="alert alert-<%= name == :notice ? "success" : "danger" %> alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times; </button>
+          <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      </div>
+    <% end %> 
+  <% end %> 
     <!-- end of flashes section -->
 	
 	<%= yield %>
