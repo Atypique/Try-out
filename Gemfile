@@ -37,7 +37,7 @@ gem "paperclip", "~> 4.2"
 
 group :production do
 	gem 'pg'
-	gem 'rails_12factor'
+	gem 'rails_12factor' #detailed heroku logs
 end
 
 group :development, :test do
